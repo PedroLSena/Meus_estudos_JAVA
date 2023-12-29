@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main5{
+
+    public static void main(String[] arg){
+
+            Scanner ler = new Scanner(System.in);
+            String nome;
+            System.out.println("Digite seu nome:");
+            nome = ler.nextLine();
+
+            System.out.println("Seu nome é : "+ nome);
+    }
+}

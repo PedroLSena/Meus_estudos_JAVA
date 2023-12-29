@@ -1,0 +1,51 @@
+Considere que você foi contratado para desenvolver uma aplicação para o zoológico. O zoológico
+tem os seguintes animais: leão, cachorro, tigre, hipopótamo, gato:
+a. Crie a superclasse: Animal. Essa superclasse deve ter os métodos: comer, comunicar e
+andar. Implemente esses métodos colocando uma mensagem: “Eu estou comendo” para o
+método comer, por exemplo.
+b. Crie as subclasses: Leao, Cachorro, gato, Tigre e Hipopotamo.
+c. Sobrescreva o método comunicar em todas as subclasses.
+d. Crie uma classe chamada Zoo. Essa classe será a principal, a classe que faremos os testes
+das outras classes criadas.
+e. No método main da classe Zoo crie um menu para que o usuário escolha qual animal ele
+deseja criar. Após a escolha do usuário, o código deve criar o animal escolhido e chamar os
+mét
+f. odos: andar, comer e comunicar.
+2. Considere as seguintes classes:, Aparelho , Celular , Fax , Fixo , Móvel , Smartfone , Telefone.
+Considere que um Aparelho pode ser Móvel ou Fixo. Considere que Celular e Smartfone são
+Moveis. Considere que Telefone e Fax são fixo. Desenhe a herança entre essas classes.
+3. Escreva as classes necessárias para resolver o seguinte problema: precisa-se desenvolver uma
+aplicação para calcular a área de figuras. Considere que a aplicação possui somente as figuras:
+circulo, quadrado e triangulo. A superclasse Figura possui os métodos area que calcula a área e o
+método mostrar que apresenta o valor da área calculada. Todas as figuras são subclasses da classe
+Figura.
+4. Como o polimorfismo pode ser aplicado no item e da questão 1? Reescreva a classe utilizando esse
+paradigma da POO.
+5. Crie uma classe em Java chamada Data que inclui três informações como variáveis de instância:
+• mês (int),
+• dia (int)
+
+IFBa - Prof.(a) Alêssa Soares
+
+IFBA – INSTITUTO FEDERAL DA BAHIA – UE Feira de Santana, 2022 Página 2
+
+• e ano (int).
+A classe deve ter métodos get e set para cada variável e um construtor que inicializa as variáveis e
+assume que os valores fornecidos são corretos. Forneça um método displayData que exibe o dia, o
+mês e o ano separados por barras normais ( / ). Escreva um aplicativo de teste chamado DataTeste
+que demonstra as capacidades da classe Data.
+6. Crie uma classe calculadora. Esta classe deve ser abstrata e implementar as operações básicas
+(soma, subtração, divisão e multiplicação). Utilizando o conceito de herança crie uma classe
+chamada calculadora cientica que implementa os seguintes cálculos: raiz quadrada e a potência.
+Dica utilize a classe Math do pacote java.lang.
+7. Criar uma estrutura hierárquica que contenha as seguintes classes: Veiculo (classe abstrata),
+Bicicleta e Automóvel. Os métodos da classe Veiculo são todos abstratos e possuem a seguinte
+assinatura:
+• public foat acelerar(foat velocidade);
+• public void parar();
+Estes métodos são implementados nas subclasses Automóvel e Bicicleta. Acrescentar na classe
+Automóvel o método public void mudarOleo(Foat litros).
+8. Escreva um programa para armazenar dados de veículos. Primeiramente, crie a classe Motor que
+contém NumCilindro (int) e Potencia(int). Inclua um construtor sem argumentos que inicialize os
+dados com zeros e um que inicialize os dados com os valores recebidos como argumento.
+Acrescente duas funções, uma para a entrada de dados, Get(), e uma que imprima os dados, Print().

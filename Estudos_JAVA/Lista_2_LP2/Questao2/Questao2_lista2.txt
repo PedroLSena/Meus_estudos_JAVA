@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Questao2_lista2 {
+    public static void main(String[] arg){
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite o valor do produto: ");
+        int valor = ler.nextInt();
+
+        double novoValor = (valor * 0.9);
+
+        System.out.println("Valor Adicional novo: " + novoValor);
+
+    }
+}

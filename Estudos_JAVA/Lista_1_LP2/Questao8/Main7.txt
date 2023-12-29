@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main7 {
+    public static void main(String[] arg){
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o valor da altura: ");
+        int  h =  ler.nextInt();
+        System.out.println("Digite o valor da base maior:  ");
+        int bma =  ler.nextInt();
+        System.out.println("Digite o valor da base menor:  ");
+        int bmn = ler.nextInt();
+
+        int area;
+
+        area = (h*(bmn+bma))/2;
+
+        System.out.println("o valor da area do trapesio é : "+ area);
+
+    }
+}

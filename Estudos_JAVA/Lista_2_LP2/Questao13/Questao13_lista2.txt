@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Questao13_lista2 {
+    public static void main(String[] arg){
+
+        Scanner ler = new Scanner(System.in);
+        int num;
+
+        do{
+            System.out.println("Digite um numero:");
+            num = ler.nextInt();
+
+            System.out.println( num*4);
+        }while( num % 6 != 0);
+    }
+}

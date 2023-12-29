@@ -1,0 +1,12 @@
+public class Main2 {
+    public static void main(String[] arg){
+        int x, y;
+        double z;
+        x= 23;
+        z= x;
+        z+= 2;
+        y= (int)z;
+        char l='a';
+        System.out.println("O valor de x é "+ x +" e o valor de y é "+y);
+    }
+}

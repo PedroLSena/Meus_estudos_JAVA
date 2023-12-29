@@ -1,0 +1,7 @@
+int;
+char;
+double/float;
+boolean;
+
+menos usados(nao demonstrei no codigo): 
+ byte,short,long.

@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Questao7_lista2 {
+
+    public static void main(String[] arg){
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o sexo da pessoa(m - Para masculino e f - pra feminino)");
+        char sexo = ler.next().charAt(0);
+        System.out.println("Digite a altura da pessoa");
+        double altura = ler.nextDouble();
+
+        if(sexo == 'm'){
+            System.out.println("Peso para Homens:" + ((72.7*altura)-58));
+        }else if(sexo == 'f'){
+            System.out.println("Peso para Mulheres:" + ((62.1*altura)-44.7));
+        } else {
+            System.out.println("Erro!!");
+        }
+
+    }
+}

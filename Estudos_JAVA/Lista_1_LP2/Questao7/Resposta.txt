@@ -1,0 +1,3 @@
+Digite seu nome:
+Pedro Lucas Sena Pinho
+Seu nome é : Pedro Lucas Sena Pinho

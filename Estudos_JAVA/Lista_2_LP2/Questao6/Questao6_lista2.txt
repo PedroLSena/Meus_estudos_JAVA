@@ -1,0 +1,24 @@
+import java.util.*;
+public class Questao6_lista2 {
+
+    public static void main(String[] arg){
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero");
+        int numUm = ler.nextInt();
+
+        System.out.println("Digite outro numero");
+        int numDois = ler.nextInt();
+
+        int soma = numUm + numDois;
+
+        if( soma <20 ){
+            System.out.println(soma + 8);
+        }else if( soma >= 20 ){
+            System.out.println(soma - 5);
+        }else{
+            System.out.println("Erro!!");
+        }
+    }
+
+}

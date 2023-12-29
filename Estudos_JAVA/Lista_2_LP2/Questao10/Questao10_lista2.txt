@@ -1,0 +1,13 @@
+public class Questao10_lista2 {
+        public static void main(String[] args) {
+            int x = 0;
+            while (x < 10) //checks before executing loop
+            {
+
+                System.out.println(" x &lt; 10 : " + x);
+                x++;
+
+            }
+            System.out.println("A variavel x nao satisfaz mais a condicao (x &lt; 10) : " + x);
+        }
+    }

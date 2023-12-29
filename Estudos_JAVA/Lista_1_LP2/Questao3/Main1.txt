@@ -1,0 +1,17 @@
+public class Main1 {
+    public static void main(String[] args) {
+        boolean s1,s2,s3;
+        int x,y,z;
+        x=3;
+        y=++x;
+        z=y++;
+        s1 = !(x<=y);
+        s2=(y==z);
+        s3=(z+1)<=y;
+
+        System.out.println("Valor de s1:"+s1);
+        System.out.println("Valor de s2:"+s2);
+        System.out.println("Valor de s3:"+s3);
+
+    }
+}

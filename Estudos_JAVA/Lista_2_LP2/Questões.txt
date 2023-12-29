@@ -1,0 +1,178 @@
+1 – Abaixo temos um exemplo de programa que recebe uma entrada de dados via teclado. Ele se chama
+“BemVindo.java”. Abra o cmd, compile-o com o comando javac BemVindo.java e depois execute-o com o
+comando java BemVindo
+import java.io.*;
+class Bemvindo {
+public static void main(String args[]) throws Exception {
+BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
+String nome;
+System.out.println(&quot;Introduza o seu nome: &quot;);
+nome = Keyboard.readLine();
+System.out.println(&quot;Ola, &quot; + nome + &quot; - Bemvindo ao JAVA !&quot;);
+}
+}
+Repare que Keyboard é uma variável do tipo BufferedReader. Ela poderia ter qualquer nome.
+O commando Keyboard.readLine(); captura os dados digitados do teclado e armazena em uma variável tipo
+texto (String). No caso do programa anterior estamos armazenando os dados na variável nome.
+Altere o programa anterior para utilizar a classe Scanner e receber mais dois valores do teclado, telefone e
+idade, armazene-o em duas variáveis de tipo texto e depois imprima os valores das mesmas.
+Agora responda as questões abaixo usando os conceitos vistos até agora:
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 2
+2) Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas oferecendo
+desconto. Faça um algoritmo que possa entrar com o valor de um produto e imprima o novo valor tendo em
+vista que o desconto foi de 9%.
+3) Efetuar o cálculo da quantidade de litros de combustível gastos em uma viagem, sabendo-se que o carro faz
+12 km com um litro. Deverão ser fornecidos o tempo gasto na viagem e a velocidade média. Utilizar as
+seguintes fórmulas: distância = tempo * velocidade litros usados = distancia /12
+Observe o seguinte programa. Compile-o e execute-o.
+class NumeroAleatorio {
+public static void main(String arg[ ])
+{
+int x;
+x = (int)(Math.random()*100);
+System.out.println(&quot;O valor gerado e armazenado na variavel x eh &quot; + x);
+}
+}
+O objetivo desse programa é utilizar a função (int)(Math.random()*100) para gerar um número aleatório de
+0 a 100, armazenar esse número numa variável e imprimi-la posteriormente.
+4 - Utilizando IF{ } ELSE{ }.
+Antes do exercício. Analise e execute os programas abaixo:
+
+Altere esse programa para que ele receba de fora (via teclado) um valor e armazene-o numa variável Y do tipo
+int. Após isso gere um número aleatório entre 0 e 200 e armazene-o em uma variável X também do tipo int.
+Some o valor de X a Y e por fim imprima uma mensagem informando se o valor de Y é menor que 66, está
+entre 66 e 130 ou se é maior que 130.
+Dica: Utilize as funções de conversão.
+
+class IfElse {
+public static void main(String arg[ ])
+{
+int x;
+x = 35;
+if (x &lt;= 20) {
+System.out.println(&quot;O valor da variavel x eh menor que &quot; + x);
+}else if(x &gt; 20 &amp;&amp; x &lt;= 50 ) {
+System.out.println(&quot;O valor da variavel x esta entre 20 e 50&quot;);
+}
+else{
+System.out.println(&quot;O valor da variavel x eh maior que &quot; + x);
+}
+}
+}
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 3
+Agora responda as questões abaixo usando os conceitos vistos até agora:
+5) Ler um número e imprimir se ele é par ou ímpar.
+6) Construir um algoritmo que leia dois números e efetue a adição. Caso o valor somado seja maior que 20,
+este deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este
+deverá ser apresentado subtraindo-se 5.
+7) Segundo uma tabela médica, o peso ideal está relacionado com a altura e o sexo. Fazer um algoritmo que
+receba a altura e o sexo de uma pessoa, calcular e imprimir o seu peso ideal, utilizando as seguintes fórmulas:
+para homens - (72.7 * h) - 58 para mulheres - (62.1 * h) - 44.7
+8 – Utilizando SWITCH{ }.
+Obs.: O switch só trabalha com tipos inteiros, isto é, variáveis do tipo int.
+Antes do exercício. Analise e execute os programas abaixo:
+
+Altere esse programa para que, ao invés dele receber um valor de fora (via teclado), o programa gere um valor
+aleatório entre 1 e 4 e armazene esse valor na variável valor.
+import java.io.*;
+class Switch {
+public static void main(String arg[]) throws Exception {
+BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
+
+String valorTeclado;
+int valor;
+System.out.println(&quot;Digite um valor numérico entre 1 e 4: &quot;);
+valorTeclado = Keyboard.readLine();
+valor = Integer.parseInt(valorTeclado);
+switch(valor)
+{
+case 1:
+System.out.println(&quot;Segunda Opção (Valor igual a um)&quot;);
+break;
+case 2:
+System.out.println(&quot;Terceira Opção (Valor igual a dois)&quot;);
+break;
+case 3:
+System.out.println(&quot;Quarta Opção (Valor igual a tres)&quot;);
+break;
+default:
+System.out.println(&quot;Outras Opções (Valor maior que tres)&quot;);
+break;
+}
+}
+}
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 4
+Retire todos os pré-requisitos ou características que habilitem esse programa para receber dados via teclado.
+Resolva o próximo exercício usando o conceito de Switch:
+9) Ler um número inteiro entre 1 e 12 e escrever o mês correspondente. Caso o usuário digite um número fora
+desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número
+10 – Utilizando WHILE{ }.
+Essa estrutura de repetição primeiro testa uma condição e depois entra no laço que executará um
+código repetidas vezes até que essa condição seja satisfeita.
+Antes do exercício. Analise e execute os programas abaixo:
+
+11 – Utilizando DO..WHILE{ }.
+A estrutura de repetição do { ... } while(&lt;condição&gt;); equivale a instrução Repita ... Até Que
+&lt;condição&gt; vista na primeira parte do curso.
+Essa estrutura de repetição primeiro executa um código e depois testa uma condição. Esse código será
+executado repetidas vezes até que essa condição seja satisfeita.
+Antes do exercício. Analise e execute os programas abaixo:
+class ProgWhile {
+public static void main(String args[]) {
+int x = 0;
+while (x &lt; 10) //checks before executing loop
+{
+
+System.out.println(&quot; x &lt; 10 : &quot; + x);
+x++;
+
+}
+System.out.println(&quot;A variavel x nao satisfaz mais a condicao (x &lt; 10) : &quot; + x);
+}
+}
+
+class ProgDoWhile {
+public static void main(String args[]) {
+int y = 0;
+do
+{
+
+System.out.println(&quot; y &lt; 10 : &quot; + y);
+y++;
+
+}
+while (y &lt; 10);
+System.out.println(&quot;A variavel y nao satisfaz mais a condicao (y &lt; 10) : &quot; + y);
+}
+}
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 5
+12) Entrar com números e imprimir o triplo de cada número. O algoritmo acaba quando entrar com o número
+-999.
+13) Entrar com números e imprimir o quadrado de cada número até entrar um número múltiplo de 6 que
+deverá ter seu quadrado também impresso.
+14 – Utilizando FOR{ }.
+for (int i =0; i &lt; 10; i++)
+No caso acima repetiremos um código 10 vezes, pois a variável i de tipo int começa em 0 (int i =0;) é
+incrementada (i++) enquanto ela for menor que 10 (i &lt; 10;).
+Antes do exercício. Analise e execute os programas abaixo:
+
+Modifique os programas, para que ele receba do usuário um texto e quantas vezes ele deverá ser repetido.
+Dica: Primeiro peça para ele digitar um texto, armazene esse valor em uma variável e depois peça para ele
+entrar com a quantidade de repetições.
+14) Criar um algoritmo que entre com cinco números e imprimir o quadrado de cada número.
+15) Imprimir todos os números de 100 até 1.
+16) Criar um algoritmo que leia um número de entrada (num), leia n números inteiros da entrada e imprima o
+maior deles.
+a digitada.

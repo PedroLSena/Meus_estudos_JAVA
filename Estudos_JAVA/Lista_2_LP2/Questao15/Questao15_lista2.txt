@@ -1,0 +1,9 @@
+public class Questao15_lista2 {
+    public static void main(String[] arg){
+        for(int j=0;j<100;j++){
+            System.out.println(j);
+        }
+        System.out.println("100");
+
+    }
+}

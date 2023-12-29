@@ -1,0 +1,5 @@
+A variavel Z esta sem ";".
+O valor char deve conter '', nao "";
+O valor Int nao pode ser receber o valor de double;
+
+Codigo correto esta em "Main2"(usei o "(int)"para converter um double para um int).

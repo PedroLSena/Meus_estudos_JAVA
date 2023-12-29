@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Questao3_lista2 {
+     public static void main(String[] arg){
+
+         Scanner ler = new Scanner(System.in);
+
+         System.out.println("Tempo gasto na viagem?");
+         double tempo = ler.nextDouble();
+
+         System.out.println("A velocidade média da viagem?");
+         double velocidade = ler.nextDouble();
+
+         double distancia = tempo * velocidade;
+
+         double litros = distancia/12;
+
+         System.out.println("Litros usados na viagem:" + litros);
+    }
+}

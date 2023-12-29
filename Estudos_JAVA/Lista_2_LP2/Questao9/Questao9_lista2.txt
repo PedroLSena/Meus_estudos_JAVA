@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class Questao9_lista2 {
+    public static void main(String[] arg){
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numro correspondente a um mes:");
+        int mes = ler.nextInt();
+
+        switch (mes){
+            case 1:
+                System.out.println("Mes de janeiro");
+                break;
+            case 2:
+                System.out.println("Mes de fevereiro");
+                break;
+            case 3:
+                System.out.println("Mes de marco");
+                break;
+            case 4:
+                System.out.println("Mes de abril");
+                break;
+            case 5:
+                System.out.println("Mes de maio");
+                break;
+            case 6:
+                System.out.println("Mes de junho");
+                break;
+            case 7:
+                System.out.println("Mes de julho");
+                break;
+            case 8:
+                System.out.println("Mes de agosto");
+                break;
+            case 9:
+                System.out.println("Mes de setembro");
+                break;
+            case 10:
+                System.out.println("Mes de outubro");
+                break;
+            case 11:
+                System.out.println("Mes de novembro");
+                break;
+            case 12:
+                System.out.println("Mes de dezembro");
+                break;
+            default:
+                System.out.println("Valor nao possui mes");
+                break;
+        }
+    }
+}

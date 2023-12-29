@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Questao14_lista2 {
+    public static void main(String[] arg){
+
+        int z;
+
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite o numero que ira ser contado: ");
+        int maxX = ler.nextInt();
+
+        for (z = 0; z < maxX; z++)
+        {
+
+            System.out.println( z +"ª numero digitado :" + (z+1));
+
+        }
+        //Fiz o codigo sem tratamento de erro.
+        //System.out.println("A variavel z nao satisfaz mais a condicao (z &lt; maxX) " + maxX);
+    }
+}

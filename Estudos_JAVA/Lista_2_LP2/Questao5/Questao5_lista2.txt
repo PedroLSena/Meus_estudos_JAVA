@@ -1,0 +1,19 @@
+import java.util.*;
+public class Questao5_lista2 {
+
+    static public void main(String[] arg){
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite um numero: ");
+        int num = ler.nextInt();
+
+        if( num % 2 == 0 ){
+            System.out.println("Numero par");
+        }else if( num % 2 != 0){
+            System.out.println("Numero impar");
+        }else{
+            System.out.println("Erro!!");
+        }
+    }
+}

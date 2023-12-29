@@ -1,0 +1,197 @@
+1 – Trabalhando com Arrays – Vetores, matrizes e arraylist.
+O array é uma variável capaz de conter mais de um valor de um determinado tipo, sendo cada valor acessível
+pelo seu índice numérico.
+//Exemplo de programa sem array (vetor)
+class Dias_Semana {
+public static void main(String args[]) {
+String dia_0 = &quot;Domingo&quot;;
+String dia_1 = &quot;Segunda&quot;;
+String dia_2 = &quot;Terca&quot;;
+String dia_3 = &quot;Quarta&quot;;
+String dia_4 = &quot;Quinta&quot;;
+String dia_5 = &quot;Sexta&quot;;
+String dia_6 = &quot;Sabado&quot;;
+System.out.println(&quot;Hoje eh: &quot; + dia_0);
+System.out.println(&quot;Hoje eh: &quot; + dia_1);
+System.out.println(&quot;Hoje eh: &quot; + dia_2);
+System.out.println(&quot;Hoje eh: &quot; + dia_3);
+System.out.println(&quot;Hoje eh: &quot; + dia_4);
+System.out.println(&quot;Hoje eh: &quot; + dia_5);
+System.out.println(&quot;Hoje eh: &quot; + dia_6);
+}
+}
+
+class Dias_Semana1 {
+public static void main(String args[]) {
+int dia;
+String dias_semana[];
+dias_semana = new String[7];
+dias_semana[0] = &quot;Domingo&quot;;
+dias_semana[1] = &quot;Segunda-Feira&quot;;
+dias_semana[2] = &quot;Terca-Feira&quot;;
+dias_semana[3] = &quot;Quarta-Feira&quot;;
+dias_semana[4] = &quot;Quinta-Feira&quot;;
+dias_semana[5] = &quot;Sexta-Feira&quot;;
+dias_semana[6] = &quot;Sabado&quot;;
+for (dia=0; dia &lt; dias_semana.length; dia++) {
+System.out.println(&quot;Hoje eh: &quot; + dias_semana[dia]);
+}
+}
+}
+
+class Dias_Semana2 {
+public static void main(String args[]) {
+int dia;
+String dias_semana[] = {&quot;Domingo&quot;,&quot;Segunda&quot;,&quot;Terca&quot;,&quot;Quarta&quot;,&quot;Quinta&quot;,&quot;Sexta&quot;,&quot;Sabado&quot;};
+for (dia=0; dia &lt; dias_semana.length; dia++) {
+System.out.println(&quot;Hoje eh: &quot; + dias_semana[dia]);
+}
+}
+}
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 2
+Executando os programas anteriores percebemos que o resultado é o mesmo para os três.
+Percebemos também que existem duas formas de declarar e inicializar um vetor.
+No programa “Dias_Semana1.java” escrevemos mais, porém temos uma noção de quantidade de itens
+contidos em nosso vetor.
+Outra forma de saber a quantidade de itens contidas num vetor é usando o método length do vetor declarado.
+Tanto em “Dias_Semana1.java” quanto em “Dias_Semana2.java” utilizamos esse método:
+ for (dia=0; dia &lt; dias_semana.length; dia++) essa linha equivale a for (dia=0; dia &lt; 7; dia++)
+Com essas informações, crie um programa chamado “Agenda.java” onde você deve declarar dois vetores
+de tamanho 10 e do tipo String chamados Nome e Telefone.
+Inicialmente esses vetores estarão vazios. Eles deverão ser preenchidos com dados vindos de fora da
+aplicação, isto é, vindos do teclado.
+Para isso, complemente seu programa para que ele peça ao usuário (utilizador) que ele entre com o nome e
+telefone de cada contato da agenda. Obs.: Armazene esses dados nos vetores criados.
+Após isso, percorra esses vetores imprimindo todos os nomes e telefones da agenda com o seguinte layout:
+
+Nome 0: nome0 Tel.: telefone0
+Nome 1: nome1 Tel.: telefone1
+Nome 9: nome9 Tel.: telefone1
+
+Dicas: 1 - Utilize o comando System.out.print para ajudar na confecção do layout de saída.
+2 – Utilize dois comandos “FOR” um para preencher os dois vetores de uma só vez e outro pra
+imprimir a lista com todos os nomes e telefones.
+2 – Implemente em Java uma calculadora. A calculadora deve ter as operações básicas: soma, subtração,
+multiplicação e divisão e o módulo. O programa deve exibir o seguinte menu:
+Digite o número correspondente a operação desejada e aperte &lt;enter&gt;
+********************************************************
+********************************************************
+* 1 - Adição de dois números
+* 2 - Subtração de dois números
+* 3 - Multiplicação de dois números
+* 4 - Divisão de dois números
+* 5 - O resto da divisão(modulo) de dois números
+* 9 - Encerrar Programa
+*********************************************************
+Esse menu deve ser exibido na tela até que a opção 9 seja digitada.
+3 - Leia 5 nomes e 5 notas de alunos de uma turma, calcule e exiba a média das notas da turma e em seguida
+exiba a relação de nomes cuja nota é superior a esta média.
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 3
+4 - Leia um conjunto de notas, cuja quantidade seja determinada pelo usuário. Calcule a média de todas elas.
+Exiba o conjunto das notas maiores do que a média calculada. Em seguida, de forma agrupada, exiba o outro
+conjunto de notas menores do que a média.
+5 - Leia um conjunto de salários, sendo que para terminar a entrada será fornecido o valor -1. Após toda a
+entrada ter sido realizada, leia o valor de um reajuste. Em seguida exiba todos os salários já reajustados.
+6 - Crie um vetor capaz de armazenar 50 números inteiros. Em seguida faça o seu preenchimento automático
+com os números de 101 a 150, ou seja, na posição número 0 ponha 101, na posição 1 ponha o número 102, e
+assim sucessivamente. Em seguida exiba os valores deste vetor.
+7 - Escreva um programa Java que declara e constrói uma matriz de 10 elementos do tipo int. Em seguida use
+um laço for para inicializar os elementos com os valores de 1 até 10. Para finalizar exiba os valores dos
+elementos da matriz na vertical. Seu programa deverá exibir a seguinte saída:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+8 - Faça um programa que preencha uma matriz 20x10 com numeros inteiros, e some cada uma das
+colunas, armazenando o resultado da soma em um vetor. A seguir o programa deverar multiplicar cada
+elemento da matriz pela soma da coluna e mostrar a matriz resultante.
+9 - Crie um método que recebe uma matriz de inteiros positivos e substitui seus elementos de valor ímpar
+por -1 e os pares por +1.
+10 - Preencha uma matriz de inteiros com números aleatórios positivos menores que 100.
+11 - Escreva um programa Java contendo um ArrayList de inteiros chamado valores. Peça para o usuário
+informar 5 valores inteiros e adicione-os individualmente no ArrayList. Em seguida imprima os elementos
+do ArrayList, de forma individual, usando o laço for.
+12 - Crie um objeto chamado Cliente com os atributos: id, nome, idade, telefone. Faça um programa para
+solicitar os dados de vários clientes e armazenar em um ArrayList até que se digite um número de ID
+negativo. Em seguida exiba os dados de todos os clientes via SystemOut, formatando cada objeto separado
+por linhas.
+13 – Programação Orientada a Objetos:
+13.1 -Crie uma classe chamada Carro. Essa classe deve ter os atributos: marca, cor, placa, capacidade
+do tanque, velocidade e ano. A classe Carro tem os métodos: ligar, desligar, acelerar, parar e frear.
+a. O método ligar deve exibir para o usuário a mensagem: Carro ligado!
+b. O método desligar deve chamar o método parar e depois exibir para o usuário a
+mensagem: Carro desligado!
+c. O método acelerar deve receber como parâmetro um valor que indique até que velocidade
+deve chegar. À medida que a velocidade for aumentando uma mensagem indicando-a deve
+ser exibida;
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 4
+d. O método parar deve diminuir a velocidade até chegar a zero. À medida que a velocidade
+for diminuindo uma mensagem indicando-a deve ser exibida;
+e. O método frear deve receber como parâmetro um valor que indique até que velocidade
+deve frear. À medida que a velocidade for diminuindo uma mensagem indicando-a deve ser
+exibida;
+
+13.2 - Crie uma classe chamada Motorista. Essa classe deve ter os atributos: nome, idade, número da
+carteira e um carro. A classe Motorista tem os métodos: dirigir, comprar, vender, abastecer, frear.
+f. O método dirigir deve chamar o método ligar e acelerar de seu carro;
+g. O método comprar deve solicitar ao usuário os atributos do carro que deseja comprar.
+Com os valores obtidos os atributos do carro do motorista deve ser preenchidos;
+h. O método vender deve atribuir ao atributo do carro o valor null;
+i. O método abastecer deve receber como parâmetro um valor que indique a quantidade de
+litros que deseja abastecer. Cuidado para não transbordar o tanque! À medida que o
+abastecimento for acontecendo uma mensagem indicando a quantidade de litros deve ser
+exibida;
+j. O método frear deve chamar o método frear de seu carro;
+13.3 - Crie uma classe principal chamada Detran, que deve possuir o método main.
+No método main:
+a. Crie um objeto Motorista chamado motorista;
+b. Chame o método comprar do objeto motorista;
+c. Chame o método dirigir do objeto motorista;
+d. Chame o método abastecer do objeto motorista;
+e. Chame o método dirigir do objeto motorista;
+f. Chame o método frear do objeto motorista;
+g. Chame o método vender do objeto motorista;
+
+14 - Um banco mantém contas de clientes armazenando o número da conta, o nome do cliente e o saldo
+atual da conta. Os clientes podem depositar o quanto quiserem nas contas, mas podem sacar somente
+enquanto a conta possuir saldo positivo. Crie esses métodos de deposito e saque na classe conta e na classe
+banco que será a principal instancie um objeto da classe conta e realize as possíveis operações.
+15 - Escreva uma classe chamada Pessoa que represente os dados de uma pessoa, como nome, telefone, e-mail
+e endereço. Declare as variáveis e os seus tipos. Em seguida crie uma classe chamada CadernoDeEndereços
+que deve possuir um método que mostre os dados de uma pessoa na tela como em uma antiga agenda
+telefônica. Perceba que essa será a classe principal e nela deve existir uma instancia de um objeto da classe
+pessoa, com valores atribuídos. Chame o método que mostra os valores.
+16 - Crie uma classe Retangulo que obedeça à descrição abaixo:
+
+IFBA - Prof. Alêssa Soares
+
+IFBA – Instituto Federal de Ciência e Tecnologia da Bahia – Feira de Santana Página 5
+ A classe possui os atributos lado1, lado2, area e perimetro, todos do tipo float.
+ O método calcularArea deve realizar o cálculo da área do retângulo (area = lado1 * lado2). Em seguida,
+deve escreve o valor da área na tela.
+ O método calcularPerimetro faz o cálculo do perimetro (perimetro = 2*lado1 + 2*lado2). Em seguida, deve
+escreve o valor do perímetro na tela.
+Crie o método main e instancie a classe Retangulo, criando um objeto novoRetangulo do tipo Retangulo.
+ Atribua o valor 10 ao atributo lado1.
+ Atribua o valor 5 ao atributo lado2.
+ Chame o método calcularArea.
+ Chame o método calcularPerimetro.
+ Atribua o valor 7 ao atributo lado2.
+ Chame o método calcularArea.
+ Chame o método calcularPerimetro.
+ Crie outra instancia de retângulo, conforme as instruções anteriores solicitando os valores pelo teclado.

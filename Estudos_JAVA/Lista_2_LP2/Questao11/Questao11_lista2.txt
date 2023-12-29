@@ -1,0 +1,14 @@
+public class Questao11_lista2 {
+        public static void main(String args[]) {
+            int y = 0;
+            do
+            {
+
+                System.out.println(" y &lt; 10 : " + y);
+                y++;
+
+            }
+            while (y < 10);
+            System.out.println("A variavel y nao satisfaz mais a condicao (y &lt; 10) : " + y);
+        }
+    }

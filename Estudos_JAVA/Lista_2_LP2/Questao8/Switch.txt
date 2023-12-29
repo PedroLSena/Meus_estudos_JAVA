@@ -1,0 +1,26 @@
+import java.io.*;
+class Switch {
+    public static void main(String arg[]) throws Exception {
+        BufferedReader Keyboard = new BufferedReader(new InputStreamReader(System.in));
+
+        String valorTeclado;
+        int valor;
+        valor = (int)(Math.random()*5);
+        System.out.println("Valor randomico:"+ valor);
+        switch(valor)
+        {
+            case 1:
+                System.out.println("Segunda Opção (Valor igual a um)");
+                break;
+            case 2:
+                System.out.println("Terceira Opção (Valor igual a dois)");
+                break;
+            case 3:
+                System.out.println("Quarta Opção (Valor igual a tres)");
+                break;
+            default:
+                System.out.println("Outras Opções (Valor maior que tres)");
+                break;
+        }
+    }
+}

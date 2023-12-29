@@ -1,0 +1,3 @@
+Valor de s1:false
+Valor de s2:false
+Valor de s3:true

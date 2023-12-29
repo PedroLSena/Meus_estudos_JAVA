@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Questao14_1_lista2 {
+    public static void main(String[] arg){
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.println("Digite o primeiro numero: ");
+        int num1 = ler.nextInt();
+
+        System.out.println("Digite o segundo numero: ");
+        int num2 = ler.nextInt();
+
+        System.out.println("Digite o terceiro numero: ");
+        int num3 = ler.nextInt();
+
+        System.out.println("Digite o quarto numero: ");
+        int num4 = ler.nextInt();
+
+        System.out.println("Digite o quinto numero: ");
+        int num5 = ler.nextInt();
+
+        System.out.println(num1*5);
+        System.out.println(num2*5);
+        System.out.println(num3*5);
+        System.out.println(num4*5);
+        System.out.println(num5*5);
+        
+    }
+}

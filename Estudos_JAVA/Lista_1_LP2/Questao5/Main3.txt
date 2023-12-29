@@ -1,0 +1,10 @@
+public class Main3 {
+    public static void main( String[] arg){
+        int x=2;
+        char y='a';
+        double z= 1.4;
+        boolean j=false;
+
+        System.out.println( "valores: \n"+ x +"\n"+ y +"\n"+  z +"\n"+ j);
+    }
+}
